@@ -1,12 +1,10 @@
-{
-	"folders": [
-		{
-			"path": "../../.ipython/project 5/video-game-sales-analysis"
-		},
-		{
-			"name": "Video-Game-Sales-Analysis-Project",
-			"path": "."
-		}
-	],
-	"settings": {}
-}
+# 0) Set your repo folder path
+$repo = "C:\path\to\your\repo"   # <-- change this
+
+# 1) Go to the repo and create a feature branch
+cd $repo
+git checkout -b feature/add-sprint5-notebook
+
+# 2) Copy the notebook into the repo (quotes handle spaces)
+Copy-Item -LiteralPath "C:\Users\robab\OneDrive\2025\Tripleten\Sprint 5\Video_game project analysis.ipynb" `
+          -Destination $repo -Force
